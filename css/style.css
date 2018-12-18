@@ -73,11 +73,11 @@ a:hover {
 
 /* banner部分 */
 .main_header {
-  height:400px;
+  height: 600px;
   color:#fff;
-  background-image: url("https://images.unsplash.com/photo-1488229297570-58520851e868?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c294d4cfcd05969089c0e62f5b16d884&auto=format&fit=crop&w=1949&q=80");
+  background-image: url(../images/plane-min.jpg);
   overflow: hidden;
-  background-position:100% 10%;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -87,8 +87,8 @@ img {
 }
 .banner-title {
   color:#fff;
-  padding-top:1.5em;
-  font-weight:500;
+  padding-top: 3.5em;
+  font-weight: 500;
 }
 .banner-title-sm {
   color:#fff;
@@ -101,7 +101,6 @@ img {
   border-left: 5px solid #FF570C;
   padding-bottom: 1em;
   margin-bottom: 1em;
-
 }
 /* exhibit-title */
 .exhibit-title-box {
@@ -115,7 +114,6 @@ img {
   padding-left:0.5em;
   padding-top:0.5em;
   font-weight:400;
-  
 }
 .exhibit-title-sm {
   padding-left:1.3em;
@@ -141,7 +139,6 @@ img {
 }
 .story_inner {
   text-align:center;
-
 }
 .story_txt {
   padding:4em;
@@ -167,10 +164,9 @@ img {
 .story_running img {
     border-radius:50%;
 }
-
 /* footer */
 footer {
-  background-image: url("https://images.unsplash.com/photo-1488229297570-58520851e868?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c294d4cfcd05969089c0e62f5b16d884&auto=format&fit=crop&w=1949&q=80");
+  background-image: url(../images/plane-min.jpg);
   height:400px;
   width: 100%;
   color:#fff;
