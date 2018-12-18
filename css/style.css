@@ -96,13 +96,24 @@ img {
   padding-bottom:1.5em;
   font-weight:400;
 }
+.note {
+  max-width: 100%;
+  border-left: 5px solid #FF570C;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+
+}
 /* exhibit-title */
 .exhibit-title-box {
   border-left:5px solid #FF570C;
+  margin-bottom: 30px;
+}
+.exhibit-title-box p {
+  font-size: 16px;
 }
 .exhibit-title {
-  padding-left:1em;
-  margin-top:3em;
+  padding-left:0.5em;
+  padding-top:0.5em;
   font-weight:400;
   
 }
@@ -112,7 +123,10 @@ img {
   margin-bottom:2em;
   font-weight:300;
 }
-
+.skillInline {
+  display: inline-block;
+  width: 33%;
+}
 /* web-item */
 .introduce {
   font-weight:300;
