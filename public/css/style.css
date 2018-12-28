@@ -11,7 +11,8 @@ p {
 
 h1, h2, h3 {
   color: #78817a;
-  text-shadow: 1px 1px #000; }
+  text-shadow: 1px 1px #000;
+  font-family: "ZCOOL XiaoWei", "Trebuchet MS", Verdana, sans-serif; }
 
 a {
   transition: 0.7s; }
