@@ -9,15 +9,15 @@ img {
 p {
   color: #727272; 
 }
-
-p.mt-50 {
-  margin-top: 75px;
+.mt-30 {
+  margin-top: 30px !important;
 }
-@media only screen and (max-width: 768px) {
-  p.mt-50 {
+@media (max-width:1024px) {
+  .mt-30 {
     margin-top: 0px !important;
-  }
+  }  
 }
+
 h1, h2, h3 {
   color: #78817a;
   text-shadow: 1px 1px #000;
@@ -63,7 +63,7 @@ a:hover {
   color: #fff;
   font-size: 22px; }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .navigation li {
     width: 25; }
   .navigation .menu {
@@ -100,11 +100,22 @@ img {
   padding-bottom: 1em;
   margin-bottom: 1em; }
 
+@media (max-width: 1024px) {
+  .note {
+    border-left: 0px;
+  }
+}
 /* exhibit-title */
 .exhibit-title-box {
   border-left: 5px solid #FF570C;
-  margin-bottom: 30px; }
-
+  margin-bottom: 30px;
+}
+@media (max-width:1024px) {
+  .exhibit-title-box {
+    border-left: 0;
+    margin-bottom: 0px;
+  }
+}
 .exhibit-title-box p {
   font-size: 16px; }
 
@@ -118,6 +129,12 @@ img {
   margin-top: 0;
   margin-bottom: 2em;
   font-weight: 300; }
+
+@media (max-width:1024px) {
+  .exhibit-title-sm {
+    margin-bottom: 0 !important;
+  }  
+}
 
 .skillInline {
   display: inline-block;
