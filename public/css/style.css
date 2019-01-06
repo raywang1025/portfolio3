@@ -7,8 +7,17 @@ img {
   border: 1px solid #ccc; }
 
 p {
-  color: #727272; }
+  color: #727272; 
+}
 
+p.mt-50 {
+  margin-top: 75px;
+}
+@media only screen and (max-width: 768px) {
+  p.mt-50 {
+    margin-top: 0px !important;
+  }
+}
 h1, h2, h3 {
   color: #78817a;
   text-shadow: 1px 1px #000;
@@ -54,7 +63,7 @@ a:hover {
   color: #fff;
   font-size: 22px; }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .navigation li {
     width: 25; }
   .navigation .menu {
