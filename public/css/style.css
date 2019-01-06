@@ -10,14 +10,22 @@ p {
   color: #727272; 
 }
 .mt-30 {
-  margin-top: 70px !important;
+  margin-top: 70px;
 }
 @media (max-width:1024px) {
   .mt-30 {
-    margin-top: 0px !important;
-  }  
+    margin-top: 0px;
+  }
 }
-
+.h2-transparent {
+  color: transparent;
+  text-shadow: 0 0 transparent;
+}
+@media (max-width:992px) {
+  .h2-transparent {
+    display:none;
+  }
+}
 h1, h2, h3 {
   color: #78817a;
   text-shadow: 1px 1px #000;
@@ -96,19 +104,20 @@ img {
 
 .note {
   max-width: 100%;
-  border-left: 5px solid #FF570C;
   padding-bottom: 1em;
   margin-bottom: 1em; }
 
 @media (max-width: 1024px) {
   .note {
     border-left: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
   }
 }
 /* exhibit-title */
 .exhibit-title-box {
-  border-left: 5px solid #FF570C;
   margin-bottom: 30px;
+  box-sizing: border-box;
 }
 @media (max-width:1024px) {
   .exhibit-title-box {
@@ -120,12 +129,12 @@ img {
   font-size: 16px; }
 
 .exhibit-title {
-  padding-left: 0.5em;
-  padding-top: 0.5em;
+  padding-left: 10px;
   font-weight: 400; }
 
 .exhibit-title-sm {
-  padding-left: 1.3em;
+  border-left: 5px solid #FF570C;
+  padding-left: 10px;
   margin-top: 0;
   margin-bottom: 2em;
   font-weight: 300; }
@@ -135,7 +144,14 @@ img {
     margin-bottom: 0 !important;
   }  
 }
-
+/* .mt-40 {
+  margin-top: 40px;
+} */
+@media (max-width:1024px) {
+  .mt-40 {
+    margin-top: 40px;
+  }
+}
 .skillInline {
   display: inline-block;
   width: 33%; }
