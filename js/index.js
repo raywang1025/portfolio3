@@ -22,5 +22,6 @@ $(document).ready(function(){
         myPortfolio.addEventListener('click',function(e){
           e.preventDefault();
           mixpanel.track("myPortfolio");
+        });
     });
 });
