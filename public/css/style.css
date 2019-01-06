@@ -10,7 +10,7 @@ p {
   color: #727272; 
 }
 .mt-30 {
-  margin-top: 30px !important;
+  margin-top: 70px !important;
 }
 @media (max-width:1024px) {
   .mt-30 {
