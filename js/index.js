@@ -25,3 +25,17 @@ $(document).ready(function(){
         });
     });
 });
+
+
+var account = {
+	email: 'raydingwang@gmail.com.tw',
+	password:'12345678'
+}
+
+var xhr = new XMLHttpRequest();
+console.log(xhr)
+xhr.open('post','https://hexschool-tutorial.herokuapp.com/api/signup',true);
+xhr.setRequestHeader('Content-type','application/json');
+var data = JSON.stringify(account);
+console.log(data)
+xhr.send(data);
