@@ -13,189 +13,87 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ZCOOL XiaoWei">
     <!-- css -->
     <link rel="stylesheet" href="public/css/style.css">
-    <!-- start Mixpanel -->
-    <script type="text/javascript">
-        (function(c, a) {
-            if (!a.__SV) {
-                var b = window;
-                try {
-                    var d, m, j, k = b.location,
-                        f = k.hash;
-                    d = function(a, b) {
-                        return (m = a.match(RegExp(b + "=([^&]*)"))) ? m[1] : null
-                    };
-                    f && d(f, "state") && (j = JSON.parse(decodeURIComponent(d(f, "state"))), "mpeditor" === j.action && (b.sessionStorage.setItem("_mpcehash", f), history.replaceState(j.desiredHash || "", c.title, k.pathname + k.search)))
-                } catch (n) {}
-                var l, h;
-                window.mixpanel = a;
-                a._i = [];
-                a.init = function(b, d, g) {
-                    function c(b, i) {
-                        var a = i.split(".");
-                        2 == a.length && (b = b[a[0]], i = a[1]);
-                        b[i] = function() {
-                            b.push([i].concat(Array.prototype.slice.call(arguments,
-                                0)))
-                        }
-                    }
-                    var e = a;
-                    "undefined" !== typeof g ? e = a[g] = [] : g = "mixpanel";
-                    e.people = e.people || [];
-                    e.toString = function(b) {
-                        var a = "mixpanel";
-                        "mixpanel" !== g && (a += "." + g);
-                        b || (a += " (stub)");
-                        return a
-                    };
-                    e.people.toString = function() {
-                        return e.toString(1) + ".people (stub)"
-                    };
-                    l = "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
-                    for (h = 0; h < l.length; h++) c(e, l[h]);
-                    var f = "set set_once union unset remove delete".split(" ");
-                    e.get_group = function() {
-                        function a(c) {
-                            b[c] = function() {
-                                call2_args = arguments;
-                                call2 = [c].concat(Array.prototype.slice.call(call2_args, 0));
-                                e.push([d, call2])
-                            }
-                        }
-                        for (var b = {}, d = ["get_group"].concat(Array.prototype.slice.call(arguments, 0)), c = 0; c < f.length; c++) a(f[c]);
-                        return b
-                    };
-                    a._i.push([b, d, g])
-                };
-                a.__SV = 1.2;
-                b = c.createElement("script");
-                b.type = "text/javascript";
-                b.async = !0;
-                b.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ?
-                    MIXPANEL_CUSTOM_LIB_URL : "file:" === c.location.protocol && "//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js";
-                d = c.getElementsByTagName("script")[0];
-                d.parentNode.insertBefore(b, d)
-            }
-        })(document, window.mixpanel || []);
-        mixpanel.init("e90b3a288f1fcd3ec45c9d89754bd2ae");
-    </script>
-    <!-- end Mixpanel -->
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131735490-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-131735490-2');
-    </script>
-
-    <script>
-        mixpanel.track("pageview");
-    </script>
 </head>
 
 <body>
-    <!-- navigation -->
-    <div class="navigation">
-        <ul class="menu">
-            <li>
-                <a href="index.html">Work</a>
-            </li>
-            <li>
-                <a href="about.html">About</a>
-            </li>
+    <div class="container">
+        <!-- navigation -->
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="index.html">Work</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
 
+                <div class="clear"></div>
+            </ul>
             <div class="clear"></div>
-        </ul>
-        <div class="clear"></div>
-    </div>
-    <!-- web -->
-    <div class="" id="porfolio">
-        <div class="">
-            <h2 class="exhibit-title">Portfolio</h2>
         </div>
-
-        <div class="work-container">
-            <div class="web-item">
-                <a href="https://south.1111.com.tw/ptjob/index.asp">
-                    <img src="public/css/images/1111pttime.png" alt="" class="img-responsive">
-                    <h2>1111 part time webside</h2>
-                    <p>A webside for user to find part time job.The webside build by HTML, CSS framework(Bootstrap)</p>
-                </a>
+        <!-- web -->
+        <div class="box" id="porfolio">
+            <div class="">
+                <h2 class="exhibit-title">Portfolio</h2>
             </div>
-            <div class="web-item">
-                <a href="https://south.1111.com.tw/freshman/resume_index.asp?areahide=4,5,8,9" class="introduce">
-                    <img src="public/css/images/resumecheck.png" alt="" class="img-responsive">
-                    <h2>Resume Check on 1111 job bank's website</h2>
-                    <p>1111 job bank is one of the famous job bank in Taiwan, I contributed as a Frondend Engineer and changed the website's looking by HTML and CSS and some Asp.</p>
-                </a>
-            </div>
-            <div class="clear"></div>
 
+            <div class="work_container">
+                <div class="web_item">
+                    <a href="https://south.1111.com.tw/ptjob/index.asp">
+                        <img src="public/img/1111pttime.png" alt="" class="responsive">
+                        <h3>1111 part time website</h3>
+                        <p>HTML, CSS framework(Bootstrap)
+                        </p>
+                    </a>
+                </div>
+                <div class="web_item">
+                    <a href="https://south.1111.com.tw/freshman/resume_index.asp?areahide=4,5,8,9" class="introduce">
+                        <img src="public/img/resumecheck.png" alt="" class="responsive">
+                        <h3>Resume Check on 1111 job bank's website</h3>
+                        <p>HTML and CSS</p>
+                    </a>
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="web-item">
+        <div class="web_item">
             <a href="https://raywang1025.github.io/yan-kakigori/">
-                <img src="public/css/images/yan-kakigori.png" alt="" class="img-responsive">
-                <h2>yan-kakigori </h2>
-                <p>This webside is designed and hand-coded by me,using HTML,CSS,no jQuery and Javascript.</p>
+                <img src="public/img/yan-kakigori.png" alt="" class="responsive">
+                <h3>yan-kakigori </h3>
+                <p>HTML,CSS</p>
             </a>
         </div>
-        <div class="web-item">
+        <div class="web_item">
             <a href="https://raywang1025.github.io/jo1s_clothes/">
-                <img src="public/css/images/jo1s.png" alt="" class="img-responsive">
-                <h2>jo1s uniform</h2>
-                <p>20 years local office uniforms company in Kaohsiung,want to turn the business model into clothes printing area.I contributed to architect the apearance of the website with HTML, CSS framework（Bootstrap),jquery plugin(Slideshow). </p>
+                <img src="public/img/jo1s.png" alt="" class="responsive">
+                <h3>jo1s uniform</h3>
+                <p>HTML, CSS framework（Bootstrap),jquery plugin(Slideshow). </p>
             </a>
         </div>
-    </div>
-    <div class="row">
-        <div class="web-item">
+
+        <div class="web_item">
             <a href="http://yanchengting.com/">
-                <img src="public/css/images/yan.png" alt="" class="img-responsive">
-                <h2>Yanchengting / 鹽埕町 official webside</h2>
-                <p>A webside to introduce a small Japanese style ice shop on the tiny street in the south Taiwan, build by HTML,Css framework ( Bootstrap),and jQuery plugin(Parallax Scrolling)</p>
+                <img src="public/img/yan.png" alt="" class="responsive">
+                <h3>Yanchengting / 鹽埕町 official webside</h3>
+                <p> HTML,Css framework ( Bootstrap),and jQuery plugin(Parallax Scrolling)</p>
             </a>
         </div>
-        <div class="web-item">
+        <div class="web_item">
             <a href="https://raywang1025.github.io/gii-bootstrap/index.html">
-                <img src="public/css/images/gii.png" alt="" class="img-responsive">
-                <h2>GII business model</h2>
-                <p>a business model which help people who want to learn ice dessert making or running a ice shop business.The webside build by HTML, CSS framework (Bootstrap)</p>
+                <img src="public/img/gii.png" alt="" class="responsive">
+                <h3>GII business model</h3>
+                <p>HTML, CSS framework (Bootstrap)</p>
             </a>
         </div>
     </div>
-    </div>
-    </section>
-    <section class="story" id="about">
-        <div class="story_top">
-            <div class="story_inner story_txt">
-                <h2>About</h2>
-                <p>Before being a Occupational Therapist, I'm interesting in HCI(Hunman Computer Interaction) area in industrial design, which can make people interact with equipment interface more efficiency.</p>
-                <p>In the period of time I'm a Occupational therapist,I make people with some disability healthier and more ability, then they can return to their daily life and role.</p>
-                <p>After the theapist time, I focus on Frontend technique and knowledge,which area i like, because i have passion to create and make things beautiful.</p>
-                <div class="container">
-                    <div class="row leisure_img">
-                        <img src="public/css/images/marathon.jpg" alt="" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 img-responsive">
-                        <img src="public/css/images/seaswimming.jpg" alt="" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 img-responsive">
-                    </div>
-                </div>
-                <div class="">
-                </div>
-                <h2>Leisure</h2>
-                <p>In my life, some kind of activities is nessasary for me, just like jogging, swimming, biking, or weight training.They make me stronger not only phisically but also mentally,so that my performance on working will be effective. I wish my
-                    passion for work and life will affect other people beside me.</p>
-            </div>
-        </div>
-    </section>
+
     <footer></footer>
+
+    </div>
+    <script src="js/main.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <script src="js/index.js"></script>
+
 </body>
 
 </html>

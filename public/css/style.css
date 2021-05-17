@@ -1,314 +1,44 @@
-.container {
-    word-wrap: break-word;
-    overflow: hidden;
-}
-
-img {
-    border: 1px solid #ccc;
-}
-
-p {
-    color: #727272;
-}
-
-.mt-30 {
-    margin-top: 70px;
-}
-
-@media (max-width:1024px) {
-    .mt-30 {
-        margin-top: 0px;
-    }
-}
-
-.h2-transparent {
-    color: transparent;
-    text-shadow: 0 0 transparent;
-}
-
-@media (max-width:992px) {
-    .h2-transparent {
-        display: none;
-    }
-}
-
-h1,
-h2,
-h3 {
-    color: #78817a;
-    text-shadow: 1px 1px #000;
-    font-family: "ZCOOL XiaoWei", "Trebuchet MS", Verdana, sans-serif;
-}
-
 a {
-    transition: 0.7s;
-}
-
-a:hover {
     text-decoration: none;
-}
-
-.btn-orange {
-    background-color: rgba(247, 111, 44, 1);
-    color: #fff;
-    transition: 0.7s;
-}
-
-.btn-orange:hover {
-    background-color: rgba(247, 111, 44, 0.274);
-    color: #fff;
+    color: black;
 }
 
 
 /* navigation */
 
-.clear {
-    clear: both;
-}
-
-.navigation {
-    width: 100%;
-    top: 0;
-    z-index: 100;
-    transition: 0.7s;
-}
-
-.navigation .menu {
-    float: right;
-}
-
 .navigation li {
+    float: right;
+    list-style-type: none;
+    margin: 16px 36px;
+}
+
+
+/* box */
+
+.web_item {
+    width: 30%;
+    height: 300px;
+    margin: 36px 5%;
+    padding: 0 5%;
     float: left;
-    list-style: none;
-    margin-right: 15px;
-    text-align: center;
-    margin-top: 10px;
-    font-size: 16px;
+    /* background-color: gray; */
 }
 
-.navigation i {
-    color: #fff;
-    font-size: 22px;
-}
-
-@media (max-width: 768px) {
-    .navigation li {
-        width: 25;
-    }
-    .navigation .menu {
-        float: none;
-    }
-}
-
-
-/* banner */
-
-.main_header {
-    height: 600px;
-    color: #fff;
-    background-image: url(../css/images/plane-min.jpg);
-    overflow: hidden;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-img {
+.responsive {
     width: 100%;
+    height: auto;
 }
 
-.banner-title {
-    color: #fff;
-    padding-top: 3.5em;
-    font-weight: 500;
-}
-
-.banner-title-sm {
-    color: #fff;
-    margin-top: 0;
-    padding-bottom: 1.5em;
-    font-weight: 400;
-}
-
-.note {
-    max-width: 100%;
-    padding-bottom: 1em;
-    margin-bottom: 1em;
-}
-
-@media (max-width: 1024px) {
-    .note {
-        border-left: 0px;
-        padding-bottom: 0px;
-        margin-bottom: 0px;
+@media screen and (max-width: 768px) {
+    .web_item {
+        width: 80%;
+        /* height: 300px; */
+        margin: 36px 5%;
+        padding: 0 5%;
+        /* background-color: gray; */
     }
 }
 
-.smallCircle {
-    background-color: rgba(247, 111, 44, 0.274);
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position: absolute;
-    top: 150px;
-    left: 80px;
-    z-index: 3;
-    transition: 0.5s;
-}
-
-.smallCircle:hover {
-    transform: translateX(30px);
-}
-
-.bigCircle {
-    background-color: rgba(247, 111, 44, 0.274);
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    position: absolute;
-    top: 90px;
-    right: 280px;
-    z-index: 3;
-    transition: 0.5s;
-}
-
-.bigCircle:hover {
-    transform: translateX(-70px);
-}
-
-.wrapBox {
-    position: absolute;
-}
-
-
-/* exhibit-title */
-
-.exhibit-title-box {
-    margin-bottom: 30px;
-    box-sizing: border-box;
-}
-
-@media (max-width:1024px) {
-    .exhibit-title-box {
-        border-left: 0;
-        margin-bottom: 0px;
-    }
-}
-
-.exhibit-title-box p {
-    font-size: 16px;
-}
-
-.exhibit-title {
-    padding-left: 10px;
-    font-weight: 400;
-}
-
-.exhibit-title-sm {
-    border-left: 5px solid #FF570C;
-    padding-left: 10px;
-    margin-top: 0;
-    margin-bottom: 2em;
-    font-weight: 300;
-}
-
-@media (max-width:1024px) {
-    .exhibit-title-sm {
-        margin-bottom: 0 !important;
-    }
-}
-
-
-/* .mt-40 {
-  margin-top: 40px;
-} */
-
-@media (max-width:1024px) {
-    .mt-40 {
-        margin-top: 40px;
-    }
-}
-
-.skillInline {
-    display: inline-block;
-    width: 33%;
-}
-
-
-/* web-item */
-
-.introduce {
-    font-weight: 300;
-}
-
-.work-container {
-    margin: 0 auto;
-}
-
-.web-item {
-    max-width: 46%;
-    padding: 0 2%;
-    float: left;
-}
-
-
-/* story使用table排版 */
-
-.story {
-    background-color: rgba(117, 165, 114, 0.425);
-    margin-top: 4em;
-}
-
-.story_inner {
-    text-align: center;
-}
-
-.story_txt {
-    padding: 4em;
-    font-weight: 300;
-    font-size: 1.5em;
-}
-
-.story_top:beffweb-itemore,
-.story_top:after,
-.story_bottom:before,
-.story_bottom:after {
-    content: " ";
-    display: table;
-}
-
-.story_top:after,
-.story_bottom:after {
+.clearfix {
     clear: both;
-}
-
-.story_bottom {
-    background-color: #000;
-}
-
-.story_running {
-    width: 31.3333%;
-    margin: 4em 1%;
-    float: left;
-    text-align: center;
-}
-
-.story_running img {
-    border-radius: 50%;
-}
-
-
-/* footer */
-
-footer {
-    background-image: url(../css/images/plane-min.jpg);
-    height: 400px;
-    width: 100%;
-    color: #fff;
-    overflow: hidden;
-    background-position: 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
